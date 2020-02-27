@@ -1,0 +1,15 @@
+{
+  "name": "typescript-template-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"yarn run exec\"",
+    "exec": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.6",
+    "tsc-watch": "^4.1.0",
+    "typescript": "^3.8.2"
+  }
+}
