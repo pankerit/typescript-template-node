@@ -5,10 +5,12 @@
   "license": "MIT",
   "scripts": {
     "start": "tsc-watch --onSuccess \"yarn run exec\"",
-    "exec": "node ./dist/index.js"
+    "exec": "node ./dist/index.js",
+    "debug": "tsc && ndb dist/index.js"
   },
   "devDependencies": {
     "@types/node": "^13.7.6",
+    "ndb": "^1.1.5",
     "tsc-watch": "^4.1.0",
     "typescript": "^3.8.2"
   }
